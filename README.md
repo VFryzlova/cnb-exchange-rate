@@ -1,1 +1,4 @@
-# cnb-exchange-rate
+# How to run
+* $ cd into */server*
+* $ node server
+*
