@@ -14,4 +14,5 @@ Currency exchange app that was build using React Hooks, Styled Components and Re
 
 ## 3. Start the app
 * cd into root directory
+* $ npm run build
 * $ npm run dev (should open the app in browser)
