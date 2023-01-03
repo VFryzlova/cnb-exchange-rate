@@ -3,6 +3,8 @@ import cors from 'cors'
 import fetch from 'node-fetch'
 const app = express();
 
+app.set('etag', false)
+
 fetch('https://www.cnb.cz/en/financial-markets/foreign-exchange-market/central-bank-exchange-rate-fixing/central-bank-exchange-rate-fixing/daily.txt')
     .then(response => response.text())
     .then(data => {
