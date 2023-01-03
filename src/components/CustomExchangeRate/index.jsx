@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "react-query";
 import fetchData from "../.././fetchData";
+import { Section } from './styles'
 
 const CustomExchangeRate = () => {
     const [result, setResult] = useState('')
@@ -19,7 +20,7 @@ const CustomExchangeRate = () => {
     }
 
     return (
-        <section className="custom-exchange-rate">
+        <Section className="custom-exchange-rate">
             <form
                 onSubmit={(e) => {
                     e.preventDefault()
@@ -46,7 +47,7 @@ const CustomExchangeRate = () => {
                 <button>Convert</button>
             </form>
             <div className="result">{result}</div>
-        </section>
+        </Section>
     )
 }
 

@@ -1,5 +1,6 @@
 import { useQuery } from "react-query";
 import fetchData from "../.././fetchData";
+import { Section } from './styles'
 
 const ExchangeRates = () => {
     const fetchResults = useQuery('rates', fetchData);
@@ -7,10 +8,9 @@ const ExchangeRates = () => {
     if (fetchResults.isLoading) return <div>Loading..</div>
 
     const rates = fetchResults?.data ?? []
-    //rates.splice(1, 1)
 
     return (
-        <section className="exchange-rates">
+        <Section className="exchange-rates">
             <h2>Latest currency exchange rates</h2>
             {rates.map((item) => (
                 <div className="currency-row" key={item[0]}>
@@ -21,7 +21,7 @@ const ExchangeRates = () => {
                     <span>{item[4]}</span>
                 </div>
             ))}
-        </section>
+        </Section>
     )
 }
 
