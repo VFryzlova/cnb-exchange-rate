@@ -8,11 +8,11 @@ Currency exchange app that was build using React Hooks, Styled Components and Re
 * cd into the directory
 * $ npm install
 
-## 2. Start the server
+## 3. Start the server
 * $ cd into */server*
 * $ node server
 
-## 3. Start the app
+## 4. Start the app
 * cd into root directory
 * $ npm run build
 * $ npm run dev (should open the app in browser)
