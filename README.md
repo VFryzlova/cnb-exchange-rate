@@ -6,4 +6,3 @@
 ## 2. Start the app
 * $ cd into root directory
 * $ npm run build
-* open the *dist/index.html* file in the browser
